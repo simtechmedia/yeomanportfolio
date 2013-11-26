@@ -1,0 +1,20 @@
+
+<div class="">
+
+    <div class="alert alert-info text-center" ng-show="loading"><h2>Loading</h2></div>
+    <div ng-hide="loading">
+
+        <div id="header">
+            <img clas="logo" src="../images/banner.jpg" fade-in >
+        </div>
+
+        <h1>'Allo, 'Allo!</h1>
+        <p>You now have</p>
+        <ul>
+            <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+        </ul>
+        <p>installed.</p>
+        <h3>Enjoy coding! - Yeoman</h3>
+    </div>
+
+</div>
