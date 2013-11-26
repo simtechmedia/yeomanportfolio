@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('simangApp', [])
+angular.module('simangApp', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
