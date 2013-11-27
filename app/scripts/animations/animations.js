@@ -1,10 +1,17 @@
-/*'use strict';
+'use strict';
 angular.module('simangApp')
-    .animation('fade-in', function($window) {
+    .animation('.fade', function() {
         return {
-            start : function(element, done) {
-                TweenMax.set(element, {opacity:'0'});
-                TweenMax.to(element, 1, {opacity:1});
+            addClass : function(element, className ) {
+                console.log('adding class for fadein')
+//                TweenMax.set(element, { opacity:0 });
+                TweenMax.to(element, 1, { opacity:1});
+            },
+            removeClass:function(element, className ) {
+                console.log(element);
+                console.log("removing class for fadout")
+//                TweenMax.set(element, { opacity:1});
+                TweenMax.to(element, 1, { opacity:0.5});
             }
         }
-    })*/
+    })
