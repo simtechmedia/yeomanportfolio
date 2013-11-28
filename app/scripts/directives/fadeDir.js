@@ -3,10 +3,11 @@ angular.module('simangApp')
     .directive('fade', function ($animate) {
         return function ( scope, element, attrs ) {
 
-            $animate.addClass(element, "fade");
+            console.log("found fade directive")
 
-            /*
             var evalScope = function (newVal) {
+
+                console.log("eval scope")
                 if(newVal) {
                     $animate.addClass(element, "fade");
                 } else {
@@ -14,6 +15,6 @@ angular.module('simangApp')
                 }
             }
             scope.$watch( "isHidden" ,  evalScope );
-            */
+
         }
     });

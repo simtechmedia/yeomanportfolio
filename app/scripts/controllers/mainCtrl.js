@@ -9,6 +9,8 @@ angular.module('simangApp')
             console.log("faderrrr");
             $scope.isHidden = !$scope.isHidden;
 
+            console.log("isHiden now is " + $scope.isHidden)
+
         }
 
         $scope.loading = true;
