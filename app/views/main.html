@@ -8,13 +8,18 @@
             <img clas="logo" src="../images/banner.jpg" fade ng-click="fader()" >
         </div>
 
-        <h1>'Allo, 'Allo!</h1>
-        <p>You now have</p>
-        <ul>
-            <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-        </ul>
-        <p>installed.</p>
-        <h3>Enjoy coding! - Yeoman</h3>
+        <h3>Major Projects</h3>
+        <div ng-repeat="item in majorPosts">
+            <p >{{item.title}}</p>
+        </div>
+
+        <major></major>
+
+        <!--<div ng-repeat="item in data.posts">-->
+            <!--<p >{{item.title}}</p>-->
+            <!--<img ng-src="{{item.attachments[0].url}}">-->
+        <!--</div>-->
+
     </div>
 
 </div>
