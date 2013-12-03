@@ -18,14 +18,12 @@ angular.module('simangApp')
 
                     for( var i = 0 ; i < postData.length ; i++ ) {
 
-                        var title = postData[i].title.replace("&#8211;","-")  // Not sure why this is happening
                         if(postData[i].custom_fields.portfolio_type == "major")  {
                             _this.majorPost.push(postData[i])
                         } else {
                             _this.minorPost.push(postData[i])
                         }
 
-                        $log.log(title)
 //                      console.log(console.log(_this.data.posts[i]))
                     }
 

@@ -37,7 +37,14 @@ angular.module('simangApp')
                     if ( dataSource[i].attachments[j].description == "fi" ) { thumbnail = dataSource[i].attachments[j].url  }
                 }
 
-                console.log ( thumbnail );
+                var item = {
+                    thumbnail:thumbnail,
+                    title:dataSource[i].title.replace("&#8211;","-")
+                }
+
+                console.log(item)
+
+                arrayTarget.push(item);
 
 
             }

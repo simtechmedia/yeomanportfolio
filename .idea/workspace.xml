@@ -23,37 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="465">
+            <state line="15" column="50" selection-start="465" selection-end="465" vertical-scroll-proportion="0.22189349" vertical-offset="0" max-vertical-offset="1014">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="majorDir.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/majorDir.js">
+      <file leaf-file-name="projectBox.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/projectBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/DataService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="49" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainCtrl.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/mainCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="87" selection-start="969" selection-end="969" vertical-scroll-proportion="0.50246304" vertical-offset="0" max-vertical-offset="1015">
+            <state line="11" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -62,7 +44,7 @@
       <file leaf-file-name="style.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="1" selection-start="162" selection-end="162" vertical-scroll-proportion="-3.6734693" vertical-offset="0" max-vertical-offset="270">
+            <state line="56" column="36" selection-start="958" selection-end="958" vertical-scroll-proportion="-4.265306" vertical-offset="631" max-vertical-offset="1695">
               <folding />
             </state>
           </provider>
@@ -78,28 +60,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/services/ConnectionService.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/connectionService.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/fadeIn.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/animations.js" />
         <option value="$PROJECT_DIR$/app/bower_components/angular/angular.js" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/base.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/animations/animations.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/fadeDir.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/majorDir.js" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/app/styles/style.less" />
         <option value="$PROJECT_DIR$/app/scripts/services/DataService.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/mainCtrl.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/projectBox.js" />
+        <option value="$PROJECT_DIR$/app/styles/style.less" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/projectBox.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="47" />
+    <option name="y" value="30" />
     <option name="width" value="857" />
     <option name="height" value="1174" />
   </component>
@@ -364,6 +347,11 @@
       </server>
     </servers>
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/styles" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -390,7 +378,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="857" height="1174" extended-state="0" />
+    <frame x="47" y="30" width="857" height="1174" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -427,40 +415,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/bower_components/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="106545" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/font-awesome/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="25" selection-start="2197" selection-end="2197" vertical-scroll-proportion="0.52734375" vertical-offset="0" max-vertical-offset="1245" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="259" selection-end="259" vertical-scroll-proportion="0.1734104" vertical-offset="0" max-vertical-offset="92595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/bootstrap/dist/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="408" selection-end="408" vertical-scroll-proportion="0.15699334" vertical-offset="0" max-vertical-offset="30120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/grunt-recess/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.3115727" vertical-offset="0" max-vertical-offset="1845" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="283" selection-end="283" vertical-scroll-proportion="0.15895954" vertical-offset="0" max-vertical-offset="303300" />
+        <state line="11" column="26" selection-start="283" selection-end="283" vertical-scroll-proportion="0.15895954" vertical-offset="0" max-vertical-offset="303300">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
@@ -473,13 +432,6 @@
         <state line="12" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.17509727" vertical-offset="0" max-vertical-offset="1028" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="9" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.33431953" vertical-offset="516" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/fadeDir.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="19" selection-start="201" selection-end="299" vertical-scroll-proportion="0.14591439" vertical-offset="0" max-vertical-offset="1028" />
@@ -490,37 +442,80 @@
         <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/majorDir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="465">
+        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.014272122" vertical-offset="0" max-vertical-offset="1051">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/style.less">
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="162" selection-end="162" vertical-scroll-proportion="-3.6734693" vertical-offset="0" max-vertical-offset="270">
+        <state line="6" column="12" selection-start="129" selection-end="129" vertical-scroll-proportion="0.085632734" vertical-offset="0" max-vertical-offset="1051">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/elements.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="62" selection-start="423" selection-end="423" vertical-scroll-proportion="0.12613522" vertical-offset="55" max-vertical-offset="1560">
+          <folding>
+            <marker date="1386057998000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1386057998000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/mainCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.56157637" vertical-offset="0" max-vertical-offset="1015">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/projectBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="431" selection-end="431" vertical-scroll-proportion="0.18786128" vertical-offset="0" max-vertical-offset="1038">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/DataService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="49" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+        <state line="20" column="44" selection-start="622" selection-end="622" vertical-scroll-proportion="0.28901735" vertical-offset="0" max-vertical-offset="1038">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/majorDir.js">
+    <entry file="file://$PROJECT_DIR$/app/styles/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="56" column="36" selection-start="958" selection-end="958" vertical-scroll-proportion="-4.265306" vertical-offset="631" max-vertical-offset="1695">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/mainCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/projectBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="87" selection-start="969" selection-end="969" vertical-scroll-proportion="0.50246304" vertical-offset="0" max-vertical-offset="1015">
+        <state line="11" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="50" selection-start="465" selection-end="465" vertical-scroll-proportion="0.22189349" vertical-offset="0" max-vertical-offset="1014">
           <folding />
         </state>
       </provider>
