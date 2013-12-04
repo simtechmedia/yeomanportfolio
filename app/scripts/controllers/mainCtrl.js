@@ -4,6 +4,7 @@ angular.module('simangApp')
     .controller('MainCtrl', function ($scope, $log, DataService) {
 
         $scope.majorPosts   = [];
+        $scope.minorPosts   = [];
 
         $scope.isHiden      = false;
         $scope.fader        = function () {
@@ -21,7 +22,7 @@ angular.module('simangApp')
             $log.log(DataService.majorPost);
 
             $scope.createDataArray(DataService.majorPost, $scope.majorPosts );
-//            $scope.
+            $scope.createDataArray(DataService.majorPost, $scope.minorPosts );
 
             $scope.loading = false;
         });

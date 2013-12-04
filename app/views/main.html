@@ -25,6 +25,20 @@
             </div>
 
             <h3>Minor Projects</h3>
+
+            <div class="box" ng-repeat="item in minorPosts" ng-controller="ProjectBoxCtrl" >
+                <div class="boxInner" ng-click="boxClick()">
+                    <img ng-src="{{item.thumbnail}}"/>
+                    <div class="viewHolder">
+                        <div ng-class="{true:'view opacity1', false:'view'}[selected]">
+                            View Project
+                        </div>
+                    </div>
+                    <div ng-class="{true:'titleBox marginBottom0', false:'titleBox'}[selected]">{{item.title}}</div>
+                </div>
+            </div>
+
+
         </div>
 
 
