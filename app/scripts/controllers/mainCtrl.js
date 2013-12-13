@@ -1,7 +1,10 @@
 'use strict';
 
+
 angular.module('simangApp')
     .controller('MainCtrl', function ($scope, $log, DataService) {
+
+        console.log("main controller");
 
         $scope.majorPosts   = [];
         $scope.minorPosts   = [];
@@ -22,7 +25,7 @@ angular.module('simangApp')
             $log.log(DataService.majorPost);
 
             $scope.createDataArray(DataService.majorPost, $scope.majorPosts );
-            $scope.createDataArray(DataService.majorPost, $scope.minorPosts );
+            $scope.createDataArray(DataService.minorPost, $scope.minorPosts );
 
             $scope.loading = false;
         });

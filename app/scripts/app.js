@@ -8,6 +8,10 @@ angular.module('simangApp', ['ngRoute' , 'ngAnimate' ])
         controller: 'MainCtrl',
         controllerAs : 'app'
       })
+      .when('/:name',{
+        templateUrl:'views/item.html',
+        controller: 'ItemController',
+      })
       .otherwise({
         redirectTo: '/'
       });
