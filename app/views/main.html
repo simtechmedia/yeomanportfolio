@@ -1,17 +1,9 @@
 
 <div class="">
 
-    <div class="alert alert-info text-center" ng-show="loading"><h2>Loading</h2></div>
-    <div ng-hide="loading">
-
-        <div id="header">
-            <img clas="logo" src="../images/banner.jpg" fade ng-click="fader()" >
-        </div>
-
 
         <div class="wrap">
             <h3>Major Projects</h3>
-
             <div class="box" ng-repeat="item in majorPosts" ng-controller="ProjectBoxCtrl" >
                 <div class="boxInner" ng-click="boxClick()">
                     <img ng-src="{{item.thumbnail}}"/>

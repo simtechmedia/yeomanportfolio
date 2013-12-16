@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- endbuild -->
 </head>
-<body ng-app="simangApp" class="no-touch">
+<body ng-app="simangApp" class="no-touch" ng-controller="LoadingCtrl">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -36,8 +36,17 @@
 <script src="bower_components/json3/lib/json3.min.js"></script>
 <![endif]-->
 
+<div class="alert alert-info text-center" ng-show="loading"><h2>Loading</h2></div>
+
+<div id="header">
+    <img clas="logo" src="../images/banner.jpg" fade ng-click="fader()" >
+
+    <i class="fa fa-caret-square-o-left"></i>
+</div>
+
+
 <!-- Add your site or application content here -->
-<div ng-view=""></div>
+<div ng-view="" ng-hide="loading"></div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
@@ -94,8 +103,8 @@
 <script src="scripts/directives/majorDir.js"></script>
 <script src="scripts/directives/projectBox.js"></script>
 <script src="scripts/controllers/projectBox.js"></script>
-<script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/itemCtrl.js"></script>
+<script src="scripts/controllers/loading.js"></script>
 <!-- endbuild -->
 </body>
 </html>

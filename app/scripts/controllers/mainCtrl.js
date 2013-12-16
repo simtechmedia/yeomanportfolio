@@ -8,27 +8,21 @@ angular.module('simangApp')
 
         $scope.majorPosts   = [];
         $scope.minorPosts   = [];
-
         $scope.isHiden      = false;
-        $scope.fader        = function () {
-            $scope.isHidden = !$scope.isHidden;
-        }
 
-        $scope.loading      = true;
-
-        // Get Portfolio Items From Service
-        DataService.getPortfolioItems();
+        // $scope.fader        = function () {
+        //     $scope.isHidden = !$scope.isHidden;
+        // }
 
         $scope.$on('DATA_LOADED', function (event) {
             console.log("data loaded on controller");
+            $scope.setupView();
+        });
 
-            $log.log(DataService.majorPost);
-
+        $scope.setupView = function () {
             $scope.createDataArray(DataService.majorPost, $scope.majorPosts );
             $scope.createDataArray(DataService.minorPost, $scope.minorPosts );
-
-            $scope.loading = false;
-        });
+        }
 
         $scope.createDataArray = function ( dataSource , arrayTarget) {
 
@@ -43,15 +37,21 @@ angular.module('simangApp')
 
                 var item = {
                     thumbnail:thumbnail,
-                    title:dataSource[i].title.replace("&#8211;","-")
+                    title:dataSource[i].title.replace("&#8211;","-"),
+                    slug:dataSource[i].slug
                 }
-
-                console.log(item)
-
+                // console.log(item)
                 arrayTarget.push(item);
-
-
             }
         };
 
+            // Get Portfolio Items From Service
+        if ( DataService.loadedData === false ) {
+            DataService.getPortfolioItems();
+        } else {
+            console.log("already have data , setup the view darnit")
+
+            console.log($scope);
+             $scope.setupView();
+        }
     });

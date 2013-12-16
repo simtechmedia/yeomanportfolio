@@ -5,6 +5,8 @@ angular.module('simangApp')
 
         this.majorPost    =[];
         this.minorPost    =[];
+        this.data         =[];
+        this.loadedData   = false;
 
         this.getPortfolioItems = function() {
 
@@ -27,15 +29,12 @@ angular.module('simangApp')
 //                      console.log(console.log(_this.data.posts[i]))
                     }
 
+                _this.loadedData = true;
+
                  $rootScope.$broadcast('DATA_LOADED');
 
             }).error(function(data,status,headers,config) {
-
                 $log.error("Could not get data");
-
-
             })
         }
-
-
   });
