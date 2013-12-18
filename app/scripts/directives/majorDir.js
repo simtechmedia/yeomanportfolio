@@ -11,8 +11,6 @@ angular.module('simangApp')
           var onDataLoad = function(){
               if ( scope.data != undefined ) {
                   console.log("major has data");
-
-
               }
           }
 

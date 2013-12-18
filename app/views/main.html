@@ -4,7 +4,7 @@
 
         <div class="wrap">
             <h3>Major Projects</h3>
-            <div class="box" ng-repeat="item in majorPosts" ng-controller="ProjectBoxCtrl" >
+            <div class="box" ng-repeat="item in majorPosts" ng-animate="{custom}" ng-controller="ProjectBoxCtrl" >
                 <div class="boxInner" ng-click="boxClick()">
                     <img ng-src="{{item.thumbnail}}"/>
                     <div class="viewHolder">
@@ -17,7 +17,6 @@
             </div>
 
             <h3>Minor Projects</h3>
-
             <div class="boxMinor" ng-repeat="item in minorPosts" ng-controller="ProjectBoxCtrl" >
                 <div class="boxInner" ng-click="boxClick()">
                     <img ng-src="{{item.thumbnail}}"/>
@@ -29,16 +28,11 @@
                     <div ng-class="{true:'titleBox marginBottom0', false:'titleBox'}[selected]">{{item.title}}</div>
                 </div>
             </div>
-
-
         </div>
-
 
         <!--<div ng-repeat="item in data.posts">-->
             <!--<p >{{item.title}}</p>-->
             <!--<img ng-src="{{item.attachments[0].url}}">-->
         <!--</div>-->
-
     </div>
-
 </div>

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- endbuild -->
 </head>
-<body ng-app="simangApp" class="no-touch" ng-controller="LoadingCtrl">
+<body ng-app="simangApp" class="no-touch" ng-controller="PageCtrl">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -40,10 +40,12 @@
 
 <div id="header">
     <img clas="logo" src="../images/banner.jpg" fade ng-click="fader()" >
-
-    <i class="fa fa-caret-square-o-left"></i>
 </div>
-
+<div class="menuBar">
+    <div class="backButton" ng-show="backAvailable" ng-click="goBack()">
+        <p><i class="fa fa-caret-square-o-left"></i><span class="backText"> Back</span></p>
+    </div>
+</div>
 
 <!-- Add your site or application content here -->
 <div ng-view="" ng-hide="loading"></div>
@@ -71,6 +73,7 @@
 
 <!-- build:js scripts/plugins.js -->
 <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
 <script src="bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
 <script src="bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
@@ -104,7 +107,8 @@
 <script src="scripts/directives/projectBox.js"></script>
 <script src="scripts/controllers/projectBox.js"></script>
 <script src="scripts/controllers/itemCtrl.js"></script>
-<script src="scripts/controllers/loading.js"></script>
+<script src="scripts/controllers/pageCtrl.js"></script>
+<script src="scripts/filters/myFilters.js"></script>
 <!-- endbuild -->
 </body>
 </html>

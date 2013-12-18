@@ -9,13 +9,10 @@ angular.module('simangApp')
 //        element.text('this is the projectBox directive');
 
          element.bind("click", function(e){
-             console.log("project click");
-             console.log(element)
+//             console.log("project click");
+//             console.log(element)
              angular.element(element.find('view')).addClass("opacity1");
-
          })
-
-
       }
     };
   });

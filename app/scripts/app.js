@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('simangApp', ['ngRoute' , 'ngAnimate' ])
+angular.module('simangApp', ['ngRoute' , 'ngAnimate', 'ngSanitize' ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -10,7 +10,7 @@ angular.module('simangApp', ['ngRoute' , 'ngAnimate' ])
       })
       .when('/:name',{
         templateUrl:'views/item.html',
-        controller: 'ItemController',
+        controller: 'ItemController'
       })
       .otherwise({
         redirectTo: '/'

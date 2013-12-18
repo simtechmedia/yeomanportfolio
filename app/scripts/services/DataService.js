@@ -3,9 +3,9 @@
 angular.module('simangApp')
   .service('DataService', function DataService($http, $rootScope, $log) {
 
-        this.majorPost    =[];
-        this.minorPost    =[];
-        this.data         =[];
+        this.majorPost    =[];      // Major Posts
+        this.minorPost    =[];      // Minor Posts
+        this.data         =[];      // All Posts
         this.loadedData   = false;
 
         this.getPortfolioItems = function() {
@@ -16,16 +16,15 @@ angular.module('simangApp')
                 .success(function(data) {
                  console.log("processing data...");
 
-                    var postData = data.posts;
+                    _this.data = data.posts;
 
-                    for( var i = 0 ; i < postData.length ; i++ ) {
+                    for( var i = 0 ; i < _this.data.length ; i++ ) {
 
-                        if(postData[i].custom_fields.portfolio_type == "major")  {
-                            _this.majorPost.push(postData[i])
+                        if(_this.data[i].custom_fields.portfolio_type == "major")  {
+                            _this.majorPost.push(_this.data[i])
                         } else {
-                            _this.minorPost.push(postData[i])
+                            _this.minorPost.push(_this.data[i])
                         }
-
 //                      console.log(console.log(_this.data.posts[i]))
                     }
 
