@@ -39,16 +39,16 @@
 <div class="alert alert-info text-center" ng-show="loading"><h2>Loading</h2></div>
 
 <div id="header">
-    <img clas="logo" src="../images/banner.jpg" fade ng-click="fader()" >
+    <img class="logo" src="images/banner.jpg" fade ng-click="fader()" >
 </div>
 <div class="menuBar">
-    <div class="backButton" ng-show="backAvailable" ng-click="goBack()">
+    <div class="backButton view-animation" ng-show="backAvailable" ng-click="goBack()">
         <p><i class="fa fa-caret-square-o-left"></i><span class="backText"> Back</span></p>
     </div>
 </div>
 
 <!-- Add your site or application content here -->
-<div ng-view="" ng-hide="loading"></div>
+<div ng-view="" ng-hide="loading" class="view-animation"></div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>

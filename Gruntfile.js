@@ -163,16 +163,17 @@ module.exports = function (grunt) {
       dist: {}
     },*/
     rev: {
-      dist: {
-        files: {
-          src: [
-            '<%= yeoman.dist %>/scripts/{,*/}*.js',
-            '<%= yeoman.dist %>/styles/{,*/}*.css',
-            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-            '<%= yeoman.dist %>/styles/fonts/*'
-          ]
-        }
-      }
+//      dist: {
+//        files: {
+//          src: [
+//            '<%= yeoman.dist %>/scripts/{,*/}*.js',
+//            '<%= yeoman.dist %>/styles/{,*/}*.css',
+//            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+//            '<%= yeoman.dist %>/styles/fonts/*'
+//          ]
+//        }
+//      }
+        img: ['images/**','!images/ignore/**']
     },
     useminPrepare: {
       html: '<%= yeoman.app %>/index.html',
@@ -274,6 +275,7 @@ module.exports = function (grunt) {
     },
     concurrent: {
       server: [
+        'recess',
         'coffee:dist',
         'copy:styles'
       ],
@@ -283,6 +285,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'coffee',
+        'recess',
         'copy:styles',
         'imagemin',
         'svgmin',
